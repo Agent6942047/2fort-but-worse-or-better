@@ -207,7 +207,7 @@ ent_setname horse2;test_wait .02;
 ent_fire horse2 addoutput "origin -4380 260 50";ent_fire horse2 addoutput "angles 0 0";
 
 
-say TF2sex DLC Loaded Succesfully
+say TF2sex DLC Loaded Succesfully dis bad map was made by UncleDarn420
 
 
-///=j
+///
