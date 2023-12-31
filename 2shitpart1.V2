@@ -1,0 +1,251 @@
+ent_fire platform* kill;ent_fire frog*kill;ent_fire rock005* kill;
+alias makefrog "prop_dynamic_create props_2fort/frog";
+alias rock005 "prop_dynamic_create props_mining/rock005";
+alias makeplatform "prop_dynamic_create props_trainyard/crane_platform001";
+alias makehorse2 "prop_dynamic_create props_c17/statue_horse";
+alias makeplank "prop_dynamic_create props_mining/support_wall001a";
+alias i"prop_dynamic_create props_2fort\miningcrate002;
+impulse 101;noclip;setpos -5457 -563 571;setang 90 0;test_wait .02;ent_fire ammo_* kill
+ent_fire health_* kill
+test_wait .1
+
+setpos -639 -3896 504;setang 90 180 0
+test_wait .1
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_blu_1
+ent_fire ammo_blu_1 addoutput "origin -212 -1783 259"
+ent_fire ammo_blu_1 addoutput "OnPlayerTouch ammo_blu_1,addoutput,origin -212 -1783 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_blu_2
+ent_fire ammo_blu_2 addoutput "origin -665 -2476 -190"
+ent_fire ammo_blu_2 addoutput "OnPlayerTouch ammo_blu_2,addoutput,origin -665 -2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_blu_1
+ent_fire health_blu_1 addoutput "origin -211 -1824 259"
+ent_fire health_blu_1 addoutput "OnPlayerTouch health_blu_1,addoutput,origin -211 -1824 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_blu_2
+ent_fire health_blu_2 addoutput "origin -665 -2540 -190"
+ent_fire health_blu_2 addoutput "OnPlayerTouch health_blu_2,addoutput,origin -665 -2540 -190,10"
+test_wait .05
+
+ent_create item_ammopack_small
+test_wait .05
+ent_setname ammo_red_1
+ent_fire ammo_red_1 addoutput "origin 212 1785 259"
+ent_fire ammo_red_1 addoutput "OnPlayerTouch ammo_red_1,addoutput,origin 212 1785 259,10"
+test_wait .05
+ent_create item_ammopack_medium
+test_wait .05
+ent_setname ammo_red_2
+ent_fire ammo_red_2 addoutput "origin 665 2476 -190"
+ent_fire ammo_red_2 addoutput "OnPlayerTouch ammo_red_2,addoutput,origin 665 2476 -190,10"
+test_wait .05
+ent_create item_healthkit_small
+test_wait .05
+ent_setname health_red_1
+ent_fire health_red_1 addoutput "origin 211 1825 259"
+ent_fire health_red_1 addoutput "OnPlayerTouch health_red_1,addoutput,origin 211 1825 259,10"
+test_wait .05
+ent_create item_healthkit_medium
+test_wait .05
+ent_setname health_red_2
+ent_fire health_red_2 addoutput "origin 665 2540 -190"
+ent_fire health_red_2 addoutput "OnPlayerTouch health_red_2,addoutput,origin 665 2540 -190,10"
+test_wait .1
+
+// fix incorrect model position bug
+ent_fire ammo_* disable
+ent_fire health_* disable
+test_wait .1
+ent_fire ammo_* enable
+ent_fire health_* enable
+///
+
+makeplatform;test_wait .02;
+ent_setname platformsex1;test_wait .02;
+ent_fire platformsex1 addoutput "origin 510 390 0";ent_fire platformsex1 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex2;test_wait .02;
+ent_fire platformsex2 addoutput "origin 510 270 0";ent_fire platformsex2 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex3;test_wait .02;
+ent_fire platformsex3 addoutput "origin 510 210 0";ent_fire platformsex3 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex4;test_wait .02;
+ent_fire platformsex4 addoutput "origin 510 29 0";ent_fire platformsex4 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex5;test_wait .02;
+ent_fire platformsex5 addoutput "origin 510 -140 0";ent_fire platformsex5 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex6;test_wait .02;
+ent_fire platformsex6 addoutput "origin 510 -270 0";ent_fire platformsex6 addoutput "angles 0 0";
+ent_fire platformsex1 color 225+0+0;
+ent_fire platformsex2 color 225+0+0;
+ent_fire platformsex3 color 225+0+0;
+ent_fire platformsex4 color 225+0+0;
+ent_fire platformsex5 color 225+0+0;
+ent_fire platformsex6 color 225+0+0;
+makeplatform;test_wait .02;
+ent_setname platformsex7;test_wait .02;
+ent_fire platformsex7 addoutput "origin -495 -344 0";ent_fire platformsex7 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex8;test_wait .02;
+ent_fire platformsex8 addoutput "origin -495 -100 0";ent_fire platformsex8 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex9;test_wait .02;
+ent_fire platformsex9 addoutput "origin -495 50 0";ent_fire platformsex9 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex10;test_wait .02;
+ent_fire platformsex10 addoutput "origin -495 270 0";ent_fire platformsex10 addoutput "angles 0 0";
+ent_fire platformsex7 color 0+0+225;
+ent_fire platformsex8 color 0+0+225;
+ent_fire platformsex9 color 0+0+225;
+ent_fire platformsex10 color 0+0+225;
+makeplank;test_wait .02;
+ent_setname plank;test_wait .02;
+ent_fire plank addoutput "origin -330 -388 0";ent_fire plank addoutput "angles 45 0";
+makeplank;test_wait .02;
+ent_setname plank2;test_wait .02;
+ent_fire plank2 addoutput "origin 335 379 0";ent_fire plank2 addoutput "angles 45 180";
+makefrog;test_wait .02;
+ent_setname frog;test_wait .02;
+ent_fire frog addoutput "origin -453 -652 0";ent_fire frog addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex11;test_wait .02;
+ent_fire platformsex11 addoutput "origin -500 -670 450";ent_fire platformsex11 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex12;test_wait .02;
+ent_fire platformsex12 addoutput "origin -617 -910 363";ent_fire platformsex12 addoutput "angles 45 -90";
+ent_fire platformsex12 color 0+0+225;
+ent_fire platformsex11 color 0+0+225;
+makeplatform;test_wait .02;
+ent_setname platformsex13;test_wait .02;
+ent_fire platformsex13 addoutput "origin -390 -350 450";ent_fire platformsex13 addoutput "angles 0 0";
+ent_fire platformsex13 color 0+0+225;
+makeplatform;test_wait .02;
+ent_setname platformsex14;test_wait .02;
+ent_fire platformsex14 addoutput "origin 579 905 381";ent_fire platformsex14 addoutput "angles 45 90";
+ent_fire platformsex14 color 225+0+0;
+makeplatform;test_wait .02;
+ent_setname platformsex15;test_wait .02;
+ent_fire platformsex15 addoutput "origin 441 630 485";ent_fire platformsex15 addoutput "angles 0 0";
+ent_fire platformsex15 color 225+0+0;
+makeplatform;test_wait .02;
+ent_setname platformsex16;test_wait .02;
+ent_fire platformsex16 addoutput "origin 441 290 485";ent_fire platformsex16 addoutput "angles 0 0";
+ent_fire platformsex16 color 225+0+0;
+makeplatform;test_wait .02;
+ent_setname platformsex16;test_wait .02;
+ent_fire platformsex16 addoutput "origin 441 280 485";ent_fire platformsex16 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex17;test_wait .02;
+ent_fire platformsex17 addoutput "origin -390 -30 450";ent_fire platformsex17 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex18;test_wait .02;
+ent_fire platformsex18 addoutput "origin -500 170 450";ent_fire platformsex18 addoutput "angles 0 0";
+ent_fire platformsex17 color 0+0+225;
+ent_fire platformsex18 color 0+0+225;
+makeplatform;test_wait .02;
+ent_setname platformsex19;test_wait .02;
+ent_fire platformsex19 addoutput "origin -175 196 450";ent_fire platformsex19 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex20;test_wait .02;
+ent_fire platformsex20 addoutput "origin 120 196 450";ent_fire platformsex20 addoutput "angles -10 0";
+ent_fire platformsex16 color 225+0+0;
+ent_fire platformsex20 color 225+0+0;
+ent_fire platformsex19 color 225+0+0;
+makeplank;test_wait .02;
+ent_setname plank4;test_wait .02;
+ent_fire plank4 addoutput "origin 0 1183 75";ent_fire plank4 addoutput "angles 44.5 90";
+makeplatform;test_wait .02;
+ent_setname platformsex22;test_wait .02;
+ent_fire platformsex22 addoutput "origin -128 -223 360";ent_fire platformsex22 addoutput "angles -45 180";
+ent_fire platformsex22 color 0+0+225;
+makeplatform;test_wait .02;
+ent_setname platformsex23;test_wait .02;
+ent_fire platformsex23 addoutput "origin -398 363 444";ent_fire platformsex23 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex24;test_wait .02;
+ent_fire platformsex24 addoutput "origin -382 650 444";ent_fire platformsex24 addoutput "angles 0 0";
+makeplatform;test_wait .02;
+ent_setname platformsex25;test_wait .02;
+ent_fire platformsex25 addoutput "origin -420 937 340";ent_fire platformsex25 addoutput "angles 45 90";
+makeplatform;test_wait .02;
+ent_setname platformsex26;test_wait .02;
+ent_fire platformsex26 addoutput "origin 380 -60 485";
+makeplatform;test_wait .02;
+ent_setname platformsex27;test_wait .02;
+ent_fire platformsex27 addoutput "origin 380 -400 485";
+makeplatform;test_wait .02;
+ent_setname platformsex28;test_wait .02;
+ent_fire platformsex28 addoutput "origin 421 -864 371";ent_fire platformsex28 addoutput "angles -45 90";
+makeplatform;test_wait .02;
+ent_setname platformsex29;test_wait .02;
+ent_fire platformsex29 addoutput "origin 380 -590 485"; 90";
+makeplatform;test_wait .02;
+ent_setname platformsex301;test_wait .02;
+ent_fire platformsex301 addoutput "origin 100 -229 370"; 90";ent_fire platformsex301 addoutput "angles -45 360";
+ent_fire platformsex23 color 225+0+0;
+ent_fire platformsex24 color 225+0+0;
+ent_fire platformsex25 color 225+0+0;
+ent_fire platformsex26 color 225+0+0;
+ent_fire platformsex27 color 0+0+225;
+ent_fire platformsex28 color 0+0+225;
+ent_fire platformsex29 color 0+0+225;
+ent_fire platformsex301 color 225+0+0;
+
+
+
+makefrog;test_wait .02;a
+ent_setname frog2;test_wait .02;
+ent_fire frog2 addoutput "origin -4747 256 50";ent_fire frog2 addoutput "angles 0 0";
+makehorse2;test_wait .02;
+ent_setname horse2;test_wait .02;
+ent_fire horse2 addoutput "origin -4390 260 50";ent_fire horse2 addoutput "angles 0 0";
+makefrog;test_wait .02;
+ent_setname frog3;test_wait .02;
+ent_fire frog3 addoutput "origin -4747 256 70";ent_fire frog3 addoutput "angles 0 0";
+makefrog;test_wait .02;
+ent_setname frog4;test_wait .02;
+ent_fire frog4 addoutput "origin -4706 185 120";ent_fire frog4 addoutput "angles 0 45";
+makefrog;test_wait .02;
+ent_setname frog5;test_wait .02;
+ent_fire frog5 addoutput "origin -4776 185 120";ent_fire frog5 addoutput "angles 0 45";
+makefrog;test_wait .02;
+ent_setname frog6;test_wait .02;
+ent_fire frog6 addoutput "origin -4228 370 75";ent_fire frog6 addoutput "angles 0 180";
+makefrog;test_wait .02;
+ent_setname frog7;test_wait .02;
+ent_fire frog7 addoutput "origin -4750 255 90";ent_fire frog7 addoutput "angles 0 0";
+makefrog;test_wait .02;
+ent_setname frog8;test_wait .02;
+ent_fire frog8 addoutput "origin -4750 255 110";ent_fire frog8 addoutput "angles 0 0";
+makefrog;test_wait .02;
+ent_setname frog9;test_wait .02;
+ent_fire frog9 addoutput "origin -4750 255 130";ent_fire frog9 addoutput "angles 0 0";
+makefrog;test_wait .02;
+ent_setname frog10;test_wait .02;
+ent_fire frog10 addoutput "origin -4750 255 150";ent_fire frog10 addoutput "angles 0 0";
+makerock005;test_wait .02;
+ent_setname dickrock;test_wait .02;
+ent_fire dickrock addoutput "origin 53 807 69";ent_fire dickrock addoutput "angles 0 0";
+makehorse2;test_wait .02;
+ent_setname horse2;test_wait .02;
+ent_fire horse2 addoutput "origin -4380 260 50";ent_fire horse2 addoutput "angles 0 0";
+
+
+
+
+say TF2sex DLC -ShitFort Created By UncleDarn420
+
+
+///
